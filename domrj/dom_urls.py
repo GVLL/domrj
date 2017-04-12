@@ -1,0 +1,6 @@
+base_domain = 'doweb.rio.rj.gov.br'
+prefix = 'http://doweb.rio.rj.gov.br/do/navegadorhtml/'
+printprefix = 'http://doweb.rio.rj.gov.br/imprimir.htm?'
+menu_url = 'http://doweb.rio.rj.gov.br/menu_pdf.php?edi_id={}&page=1'
+page = 'http://doweb.rio.rj.gov.br/ler_pdf.php?edi_id={}&page={}'
+download = 'http://doweb.rio.rj.gov.br/ler_pdf.php?page=0&download=ok&edi_id={}'

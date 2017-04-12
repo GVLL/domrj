@@ -1,0 +1,9 @@
+#calendario_popup
+{
+	position:absolute;
+	visibility:hidden;
+	background-color:white;
+	layer-background-color:white;
+	font-family: Verdana; 
+	font-size: 8px;
+}

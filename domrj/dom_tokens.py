@@ -1,0 +1,5 @@
+LEAF_INDICATOR = 'addChild('
+RELATIONSHIP_INDICATOR = 'addChildren('
+INTERNALNODE_INDICATOR = 'gFld('
+ROOT_ID = 'foldersTree'
+ID = 'edi_id'

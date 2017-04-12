@@ -1,0 +1,183 @@
+.txtBlack
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	height: 12px;
+}
+.txtBlackbold
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	height: 12px;
+	vertical-align: middle;
+}
+.txtRedbold
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #FF0000;
+	font-weight: bold;
+	height: 12px;
+	vertical-align: middle;
+}
+
+.txtBlue
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #0000FF;	
+	height: 12px;
+	vertical-align: middle;
+}
+
+.titulo
+{
+	font-family: verdana;
+	font-size: 10pt;
+	color: #000000;
+	font-weight: bold;	
+	background: #E5E5E5;
+	text-align: center;
+    height: 20px;
+    vertical-align: middle;
+}
+.subtitulo
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;		
+	text-align: left;
+}
+.tabrelat
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;		
+}
+
+.trrelat
+{
+	font-family: verdana;
+	font-size: 9px;
+	color: #000000;
+	
+}
+
+.campodata
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	width: 80px;
+}
+.campotexto
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	width: 220px;
+}
+.campovalor
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	width: 60px;
+}
+.campovalorgrande
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	width: 100px;
+}
+.campohora
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+	width: 50px;
+}
+.camposelect
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+}
+.campobotao
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #999999;
+}
+#body
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.botao1
+{
+	font-family: verdana;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #36BFED;
+}
+
+.linkboleto
+{
+	text-decoration: underline;
+
+}
+a.linkboleto:link 
+{
+	text-decoration: underline;
+	font-family: verdana;
+	font-size: 8px;
+	color: #0000CC;
+	font-weight: bold;
+}
+a.linkboleto:visited
+{
+	text-decoration: underline;
+	font-family: verdana;
+	font-size: 8px;
+	color: #0000CC;
+	font-weight: bold;
+}
+a.linkboleto:hover
+{
+	text-decoration: underline;	
+	color: #000000;	
+}
+
+a.linkboleto:active
+{
+	text-decoration: underline;
+	font-family: verdana;
+	font-size: 8px;
+	color: #0000CC;
+	font-weight: bold;
+}
+
+.mensagemAcao{
+    font-family: verdana;
+    font-size: 8pt;    
+}
+

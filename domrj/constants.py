@@ -1,0 +1,3 @@
+EMPIRIC_ENCODING = 'ISO-8859-1'
+EMPIRIC_DPI = 600
+TMPDIR = 'tmp_domrj_pdf'
