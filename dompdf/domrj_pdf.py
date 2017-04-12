@@ -1,8 +1,9 @@
 import os
 import requests
 import shutil
-from domrj import constants, dom_urls, utils
+import constants, dom_urls, utils
 from PyPDF2 import PdfFileMerger, PdfFileReader
+
 
 def download_pages_from_id(edi_id, work_dir, begin=1, end=None):
     totalpages = utils.get_numpages_from_id(edi_id)

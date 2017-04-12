@@ -1,4 +1,4 @@
-from domrj.datastructures import Node
+from datastructures import Node
 import dom_tokens
 
 

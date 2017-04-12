@@ -1,4 +1,4 @@
-from domrj import constants
+import constants
 test_filename = 'data/Diário Oficial_files/load_tree.html'
 
 
