@@ -2,7 +2,10 @@ import os
 import requests
 import shutil
 import constants, dom_urls, utils
-from PyPDF2 import PdfFileMerger, PdfFileReader
+from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
+from PyPDF2.generic import Destination
+from .content import box_titles
+from .models import DOSection
 
 
 def download_pages_from_id(edi_id, work_dir, begin=1, end=None):
@@ -73,3 +76,34 @@ def download_from_id(edi_id, filename):
 
 def download_from_raw_url(raw_url, filename):
     download_from_id(utils.get_id_from_url(raw_url), filename)
+
+def get_sections(pdf_reader):
+    outlines = [section for section in pdf_reader.getOutlines() if isinstance(section, Destination)]
+    offsets = [pdf_reader.getDestinationPageNumber(section) for section in outlines]
+    offsets.append(pdf_reader.getNumPages()-1) #pages enumeration starts at 0
+    sections = [DOSection(outlines[i].title.strip(), offsets[i], offsets[i+1]) for i in range(len(offsets)-1)]
+    return sections
+
+def write_section(pdf_reader, section, output=None):
+    if output is None:
+        output = '{}.pdf'.format(str(section))
+    pdf_writer = PdfFileWriter()
+    for i in range(section.begin, section.end+1):
+        pdf_writer.addPage(pdf_reader.getPage(i))
+
+    work_dir = os.path.dirname(output)
+    if work_dir and (not os.path.isdir(work_dir)):
+        os.mkdir(work_dir)
+
+    with open(output, 'wb') as outfile:
+        pdf_writer.write(outfile)
+
+def main():
+    with open('do_hoje.pdf', 'rb') as dofile:
+        pdf_reader = PdfFileReader(dofile)
+        sections = get_sections(pdf_reader)
+        for section in sections:
+            write_section(pdf_reader, section, os.path.join('results', '{}.pdf'.format(str(section))))
+
+if __name__ == '__main__':
+    main()
