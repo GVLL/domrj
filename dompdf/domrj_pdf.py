@@ -8,6 +8,10 @@ from .content import box_titles
 from .models import DOSection
 
 
+SAMPLE_FOLDER = 'sample_data'
+RESULTS_FOLDER = 'results'
+DO_FOR_TEST = 'do_sample.pdf'
+
 def download_pages_from_id(edi_id, work_dir, begin=1, end=None):
     totalpages = utils.get_numpages_from_id(edi_id)
     if (end is None) or (totalpages < end) or (end < begin):
@@ -98,12 +102,17 @@ def write_section(pdf_reader, section, output=None):
     with open(output, 'wb') as outfile:
         pdf_writer.write(outfile)
 
-def main():
-    with open('do_hoje.pdf', 'rb') as dofile:
+def split_domrj_sections(filepath, workdir):
+    with open(filepath, 'rb') as dofile:
         pdf_reader = PdfFileReader(dofile)
         sections = get_sections(pdf_reader)
         for section in sections:
-            write_section(pdf_reader, section, os.path.join('results', '{}.pdf'.format(str(section))))
+            outname = '{}.pdf'.format(str(section)).replace('?', ' ')
+            write_section(pdf_reader, section, os.path.join(workdir, outname))
+
+def main():
+    split_domrj_sections(os.path.join(SAMPLE_FOLDER, DO_FOR_TEST), RESULTS_FOLDER)
+
 
 if __name__ == '__main__':
     main()
