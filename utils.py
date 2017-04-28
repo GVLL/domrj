@@ -1,4 +1,4 @@
-import dom_urls, dom_tokens
+from domrj import dom_urls, dom_tokens
 from robobrowser import RoboBrowser
 
 

@@ -24,7 +24,36 @@
 # Avisos, Editais e Termos de Contratos
 # Publicações a Pedido
 
+# do_sections = [
+#     'Sumário do Diário Oficial',
+#     'Leis Promulgadas',
+#     'Leis Sancionadas e Vetos',
+#     'Atos do Poder Executivo',
+#     'Atos do Prefeito',
+#     'Despachos do Prefeito',
+#     'Gabinete do Prefeito',
+#     'Secretaria Municipal da Casa Civil',
+#     'Resolução Conjunta',
+#     'Secretaria Municipal de Fazenda',
+#     'Secretaria Municipal de Saúde',
+#     'Secretaria Municipal de Educação, Esportes e Lazer',
+#     'Secretaria Municipal de Ordem Pública',
+#     Secretaria Municipal de Desenvolvimento, Emprego e Inovação,
+#     Secretaria Municipal de Transportes,
+#     Secretaria Municipal de Conservação e Meio Ambiente,
+#     Secretaria Municipal de Urbanismo, Infraestrutura e Habitação,
+#     Secretaria Municipal de Assistência Social e Direitos Humanos,
+#     Secretaria Municipal de Cultura,
+#     Secretaria Especial de Relações Institucionais,
+#     Procuradoria Geral do Município do Rio de Janeiro,
+#     Controladoria Geral do Município do Rio de Janeiro,
+#     Tribunal de Contas do Município,
+#     Avisos, Editais e Termos de Contratos,
+#     Publicações a Pedido
+# ]
+
 box_titles = [
+    'COMPLETO',
     'LEIS PROMULGADAS',
     'LEIS SANCIONADAS E VETOS',
     'Atos do Poder Executivo',
@@ -47,6 +76,6 @@ box_titles = [
     'PROCURADORIA GERAL',
     'CONTROLADORIA GERAL',
     'TRIBUNAL DE CONTAS',
-    'AVISOS, EDITAIS\nE TERMOS DE CONTRATOS',
+    'AVISOS, EDITAIS E TERMOS DE CONTRATOS',
     'PUBLICAÇÕES A PEDIDO'
 ]

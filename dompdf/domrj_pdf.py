@@ -1,7 +1,7 @@
 import os
 import requests
 import shutil
-import constants, dom_urls, utils
+from domrj import constants, dom_urls, utils
 from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
 from PyPDF2.generic import Destination
 from .content import box_titles
@@ -107,7 +107,7 @@ def split_domrj_sections(filepath, workdir):
         pdf_reader = PdfFileReader(dofile)
         sections = get_sections(pdf_reader)
         for section in sections:
-            outname = '{}.pdf'.format(str(section)).replace('?', ' ')
+            outname = '{}.pdf'.format(str(section)).replace('\n', ' ')
             write_section(pdf_reader, section, os.path.join(workdir, outname))
 
 def main():
