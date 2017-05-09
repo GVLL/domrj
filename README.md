@@ -1,12 +1,14 @@
-# DO Fácil RJ
-Facilitador de leitura do Diário Oficial do Município do Rio de Janeiro
+# DOM RJ Reader
 
-
-[Weasyprint](http://weasyprint.readthedocs.io/en/latest/tutorial.html) pode ser uma alternativa ao [pdfkit](https://pypi.python.org/pypi/pdfkit) por não precisar instalar o wkhtmltopdf.
+Facilitador de leitura do Diário Oficial do Município do Rio de Janeiro.
 
 ### Dependências
 
 Listadas em *requirements.txt*
+
+### Licença
+
+Este projeto está sob a [Licença Apache v2](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 ### Por que este projeto é importante?
 
@@ -21,8 +23,13 @@ Incentiva-se a comunidade a contribuir para que ele possa ir mais além, incorpo
 
 ### Versão do PDF
 
+* Usaremos a sigla DOMRJ como referência ao Diário Oficial do Município do Rio de Janeiro.
 
+Foram implementadas rotinas para as seguintes funções:
 
+1. Determinação do identificador de edição a partir do endereço web de qualquer página dessa edição.
+2. Download de uma edição específica do DOMRJ completa, em 1 único arquivo PDF, a partir do seu identificador de edição.
+3. Segmentação do arquivo PDF de uma edição do DOMRJ em vários arquivos menores contendo apenas as páginas correspondentes a cada seção do sumário.
 
 
 ### Versão do HTML

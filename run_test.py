@@ -1,4 +1,4 @@
-from dompdf import domrj_pdf
+from domrj.dompdf import domrj_pdf
 
 
 if __name__ == '__main__':
