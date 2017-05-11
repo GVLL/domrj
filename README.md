@@ -2,9 +2,14 @@
 
 Facilitador de leitura do Diário Oficial do Município do Rio de Janeiro.
 
+As versões de Python suportadas são 3.4 ou mais recentes. *Python 2 não é suportado no momento*
+
 ### Dependências
 
-Listadas em *requirements.txt*
+* requests>=2.13.0
+* beautifulsoup4>=4.5.3
+* PyPDF2
+* robobrowser>=0.5.3
 
 ### Licença
 
